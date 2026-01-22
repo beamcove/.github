@@ -42,6 +42,18 @@ Need to override these defaults for a specific repository? No problem!
 
 **Pro tip**: Only override when necessary. Using these defaults keeps our organization consistent and reduces maintenance burden.
 
+## First-Time Setup
+
+After adding these templates, you'll need to customize the placeholder values:
+
+- [ ] Update contact information in `profile/README.md`
+- [ ] Replace placeholder URLs in `SUPPORT.md` (documentation, chat, email)
+- [ ] Add actual security contact email in `SECURITY.md` and `CODE_OF_CONDUCT.md`
+- [ ] Update issue template URLs in `.github/ISSUE_TEMPLATE/config.yml`
+- [ ] Fill in any `[Your X here]` placeholders
+
+**Search for placeholders**: Run `grep -r "example.com" .` or `grep -r "\[Your" .` to find all placeholders.
+
 ## Making Changes
 
 Want to update these community health files?
