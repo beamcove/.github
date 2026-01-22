@@ -1,0 +1,54 @@
+name: 💬 Question or Discussion
+description: Not sure about something? Let's talk it out.
+title: "[Question]: "
+labels: ["question"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Ask away! 🤔
+        
+        Questions are how we learn, and we're all about learning here. No question is too basic — we've all been confused by async/await at some point.
+        
+        **Tip**: If you're having trouble with setup or usage, check our [documentation](https://docs.example.com) and [support resources](SUPPORT.md) first. But if those don't help, we're here for you!
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What would you like to know?
+      placeholder: |
+        How do I configure [feature]? The documentation says to [do thing], but when I try it, I get [unexpected result].
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-tried
+    attributes:
+      label: What have you tried?
+      description: Let us know what you've attempted so we don't suggest things you've already ruled out
+      placeholder: |
+        - Read the documentation at [link]
+        - Searched Stack Overflow
+        - Tried [solution A], which resulted in [outcome]
+        - Consulted a Magic 8-Ball (results inconclusive)
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Code snippets, configuration files, or anything else that might help us understand your situation
+      placeholder: Add any relevant code, configuration, or context here.
+      render: markdown
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checklist
+      options:
+        - label: I've checked the documentation
+          required: true
+        - label: I've searched existing issues and discussions
+          required: true

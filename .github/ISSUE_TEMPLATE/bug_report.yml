@@ -1,0 +1,89 @@
+name: 🐛 Bug Report
+description: Found a bug? We promise not to shoot the messenger.
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thanks for taking the time to report this bug! 
+        
+        We know bugs are annoying (trust us, we write them all the time). Help us squash this one by filling out the details below.
+        
+        **Pro tip**: The more details you provide, the faster we can fix it. Think of it as a bug bounty, except the bounty is our eternal gratitude.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Tell us what went wrong. Be as dramatic as you need to be.
+      placeholder: |
+        I clicked the button and instead of saving my data, it played the Benny Hill theme song.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: What should have happened?
+      description: What did you expect to occur?
+      placeholder: |
+        The button should have saved my data and maybe played a satisfying *click* sound.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Steps to reproduce
+      description: How can we recreate this bug? Numbered steps are our love language.
+      placeholder: |
+        1. Open the app
+        2. Navigate to Settings
+        3. Click the "Save" button
+        4. Hear unexpected music
+        5. Question life choices
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: What were you using when this happened?
+      placeholder: |
+        - OS: [e.g., Windows 11, macOS 13, Ubuntu 22.04]
+        - Browser: [e.g., Chrome 120, Firefox 121, Safari 17]
+        - Version: [e.g., 1.2.3]
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs or error messages
+      description: Console output, error messages, stack traces — we love reading them all!
+      placeholder: Paste your logs here...
+      render: shell
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Screenshots, GIFs, interpretive dances — anything else that might help us understand the issue.
+      placeholder: Add any other context about the problem here.
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checklist
+      description: Quick sanity check before submitting
+      options:
+        - label: I've searched existing issues to make sure this isn't a duplicate
+          required: true
+        - label: I've provided enough information for the team to reproduce the bug
+          required: true
+        - label: I'm willing to help test the fix (optional but appreciated!)
+          required: false

@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 Documentation
+    url: https://docs.example.com
+    about: Check out our docs for guides, API references, and examples
+  - name: 💬 Community Discussion
+    url: https://github.com/orgs/beamcove/discussions
+    about: Join the conversation! Ask questions, share ideas, and connect with other users
+  - name: 🔒 Security Issue
+    url: https://github.com/beamcove/.github/security/policy
+    about: Found a security vulnerability? Please report it privately
