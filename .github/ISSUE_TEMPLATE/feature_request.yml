@@ -1,26 +1,14 @@
-name: ✨ Feature Request
-description: Got an idea? We're all ears (and keyboards).
+name: Feature Request
+description: Suggest an idea
 title: "[Feature]: "
-labels: ["enhancement", "needs-triage"]
-assignees: []
+labels: ["enhancement"]
 
 body:
-  - type: markdown
-    attributes:
-      value: |
-        ## Got a brilliant idea? 💡
-        
-        We love feature requests! They help us build better products. Before you submit, take a quick peek at existing issues to make sure someone hasn't already suggested it.
-        
-        **Remember**: There are no bad ideas, just ideas that haven't found their time yet.
-
   - type: textarea
     id: problem
     attributes:
-      label: What problem does this solve?
-      description: Tell us about the problem or pain point you're experiencing.
-      placeholder: |
-        Every time I need to [do something], I have to [manual workaround], which is about as fun as writing documentation at 5 PM on a Friday.
+      label: Problem
+      description: What problem does this solve?
     validations:
       required: true
 
@@ -28,48 +16,6 @@ body:
     id: solution
     attributes:
       label: Proposed solution
-      description: How would you like to see this problem solved?
-      placeholder: |
-        Add a button that does [thing] when I click it. Bonus points if it makes a satisfying sound.
+      description: How should it work?
     validations:
       required: true
-
-  - type: textarea
-    id: alternatives
-    attributes:
-      label: Alternatives considered
-      description: What other solutions have you thought about?
-      placeholder: |
-        I could keep doing [manual workaround], but my therapist says I need to reduce stress in my life.
-
-  - type: dropdown
-    id: priority
-    attributes:
-      label: How important is this to you?
-      description: Help us prioritize by letting us know the impact
-      options:
-        - "Nice to have (would make my day slightly better)"
-        - "Important (would significantly improve my workflow)"
-        - "Critical (currently blocking me from doing my job)"
-    validations:
-      required: true
-
-  - type: textarea
-    id: additional-context
-    attributes:
-      label: Additional context
-      description: Mockups, screenshots, ASCII art — anything that helps illustrate your idea
-      placeholder: Add any other context, diagrams, or examples here.
-
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Checklist
-      description: Before you submit...
-      options:
-        - label: I've searched existing issues to avoid duplicates
-          required: true
-        - label: I've thought about how this fits with the project's goals
-          required: true
-        - label: I'd be willing to contribute to implementing this (not required, but we love community contributions!)
-          required: false
