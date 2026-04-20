@@ -12,5 +12,5 @@ Interested in contributing? Open an issue or submit a pull request!
 
 ## Contact
 
-- Website: [Your website]
-- Email: [Your email]
+- Website: beamcove.com
+- Email: support@beamcove.com
